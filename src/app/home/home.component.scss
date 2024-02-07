@@ -1,34 +1,51 @@
 @import '../../functions.scss';
 
-.btn-container {
-    display: inline-flex;
+.main-container {
+    padding: rem(32px);
 
-    .btn-cstm {
-        padding: rem(16px);
+    .btn-container {
+        display: inline-flex;
+        width: 100%;
+    
+        .btn-cstm {
+            padding: rem(16px);
+        }
+    }
+    
+    .box-content {
+        height: rem(440px);
+        width: rem(100px);
+        border: 1px solid #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: rem(22px) 0;
+    
+        .text {
+            transform: rotate(-90deg);
+            /* Safari */
+            -webkit-transform: rotate(-90deg);
+            /* Firefox */
+            -moz-transform: rotate(-90deg);
+            /* IE */
+            -ms-transform: rotate(-90deg);
+            /* Opera */
+            -o-transform: rotate(-90deg);
+            /* Internet Explorer */
+            filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    
+            font-size: rem(32px);
+        }
+    }
+
+    .table-container {
+        display: inline-flex;
+        width: 100%;
+
+        .tables-view {
+            width: 50%;
+            padding: rem(22px);
+        }
     }
 }
 
-.box-content {
-    height: rem(440px);
-    width: rem(100px);
-    border: 1px solid #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    .text {
-        transform: rotate(-90deg);
-        /* Safari */
-        -webkit-transform: rotate(-90deg);
-        /* Firefox */
-        -moz-transform: rotate(-90deg);
-        /* IE */
-        -ms-transform: rotate(-90deg);
-        /* Opera */
-        -o-transform: rotate(-90deg);
-        /* Internet Explorer */
-        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-
-        font-size: rem(32px);
-    }
-}

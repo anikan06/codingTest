@@ -9,7 +9,7 @@ import { DataServiceService } from '../services/data-service.service';
 export class VeggiesComponent {
   @Input() data: any[] | undefined;
 
-  displayedColumns: string[] = ['name', 'code', 'weight'];
+  displayedColumns: string[] = ['srNo', 'name', 'code', 'weight'];
 
   constructor(
     private dataService: DataServiceService
