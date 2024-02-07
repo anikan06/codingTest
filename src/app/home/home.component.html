@@ -1,0 +1,38 @@
+<div class="btn-container">
+    <div class="btn-cstm">
+        <button mat-raised-button (click)="toggleTable1()">Table 1</button>
+    </div>
+    <div class="btn-cstm">
+        <button mat-raised-button (click)="toggleTable2()">Table 2</button>
+    </div>
+    <div class="btn-cstm">
+        <button mat-raised-button (click)="loadData1()">Data 1</button>
+    </div>
+    <div class="btn-cstm">
+        <button mat-raised-button (click)="loadData2()">Data 2</button>
+    </div>
+</div>
+
+<div class="table-container">
+    <ng-container *ngIf="showTable1;else fruitsBox">
+        <app-fruits [data]="fruitsData"></app-fruits>
+    </ng-container>
+    <ng-container *ngIf="showTable2;else vegBox">
+        <app-veggies [data]="vegetablesData"></app-veggies>
+    </ng-container>
+</div>
+
+<ng-template #fruitsBox>
+    <div class="box-content" *ngIf="fruitsData">
+        <div class="text" (click)="toggleTable1()">
+            Fruits
+        </div>
+    </div>
+</ng-template>
+<ng-template #vegBox>
+    <div class="box-content" *ngIf="vegetablesData">
+        <div class="text" (click)="toggleTable2()">
+            Vegetables
+        </div>
+    </div>
+</ng-template>

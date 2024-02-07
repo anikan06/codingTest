@@ -1,0 +1,34 @@
+@import '../../functions.scss';
+
+.btn-container {
+    display: inline-flex;
+
+    .btn-cstm {
+        padding: rem(16px);
+    }
+}
+
+.box-content {
+    height: rem(440px);
+    width: rem(100px);
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .text {
+        transform: rotate(-90deg);
+        /* Safari */
+        -webkit-transform: rotate(-90deg);
+        /* Firefox */
+        -moz-transform: rotate(-90deg);
+        /* IE */
+        -ms-transform: rotate(-90deg);
+        /* Opera */
+        -o-transform: rotate(-90deg);
+        /* Internet Explorer */
+        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+        font-size: rem(32px);
+    }
+}
